@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101a32" />
+  <title>Engagement Ceremony | Dr. Mohammed Adnan Faisal & Dr. Amana Hibah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Great+Vibes&family=Playfair+Display:wght@500;600;700&family=Allura&family=Alex+Brush&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Opening screen -->
+  <div class="opening-screen" id="openingScreen">
+    <div class="opening-glow"></div>
+    <div class="opening-card">
+      <div class="mini-ornament">✦</div>
+      <p class="opening-arabic">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
+      <p class="opening-kicker">YOU ARE CORDIALLY INVITED</p>
+      <h1>Engagement<br><span>Ceremony</span></h1>
+      <p class="opening-couple">Dr. Mohammed Adnan Faisal<br><span>&amp;</span><br>Dr. Amana Hibah</p>
+      <button class="open-btn" id="openInvitation">
+        <span>Open Invitation</span>
+        <b>✦</b>
+      </button>
+      <p class="music-note">♪ Tap to open &amp; begin the celebration music</p>
+    </div>
+  </div>
+
+  <div class="music-player" id="musicPlayer" aria-label="Invitation music player">
+    <button id="musicToggle" class="music-toggle" aria-label="Pause music">♫</button>
+    <div class="music-info">
+      <strong>Celebration Music</strong>
+      <span>Islamic-inspired ambient</span>
+    </div>
+    <audio id="bgMusic" loop preload="auto">
+      <source src="islamic_inspired_ambient.wav" type="audio/wav">
+    </audio>
+  </div>
+
+  <main class="page" id="invitationPage">
+    <div class="page-texture"></div>
+
+    <section class="invitation-card">
+      <div class="gold-frame">
+        <div class="corner corner-tl">❧</div>
+        <div class="corner corner-tr">❧</div>
+        <div class="corner corner-bl">❧</div>
+        <div class="corner corner-br">❧</div>
+
+        <div class="content">
+
+          <div class="arabic">
+            بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
+          </div>
+
+          <div class="divider"><span>❧</span></div>
+
+          <p class="intro">
+            Under the kind blessings of beloved parents<br>
+            <span>(Late) Mrs &amp; Mr. Mohammed Abdul Aleem Sahab.</span>
+          </p>
+
+          <div class="divider small"><span>❧</span></div>
+
+          <p class="family">
+            Mrs. (Late) Ahmed Mohiuddin Babu Miyan &amp; Sons
+          </p>
+          <p class="business">Zamarrud Press Modern Xerox Centre</p>
+
+          <div class="divider small"><span>❧</span></div>
+
+          <p class="solicit">
+            Solicit your gracious presence on the auspicious occasion of
+          </p>
+
+          <h2 class="ceremony-title">ENGAGEMENT CEREMONY</h2>
+
+          <p class="grandson">of My Beloved Grand Son</p>
+
+          <h3 class="groom">Dr. Mohammed Adnan Faisal <small>MBBS</small></h3>
+
+          <div class="with"><span>❦</span> With <span>❦</span></div>
+
+          <h3 class="bride">Dr. Amana Hibah <small>BDS</small></h3>
+
+          <p class="daughter">D/O Mohammed Yusoof Hussain.</p>
+          <p class="designation">HOD EC &amp; Vice Principal 'KCT POLYTECHNIC' Aided klb.</p>
+
+          <div class="divider small"><span>❧</span></div>
+
+          <section class="details">
+            <div class="detail">
+              <div class="detail-label">IN'SHA ALLAH ENGAGEMENT</div>
+              <div class="detail-value">Wednesday, 2nd September 2026</div>
+            </div>
+
+            <div class="detail">
+              <div class="detail-label">DINNER</div>
+              <div class="detail-value">At 8:00 PM</div>
+            </div>
+
+            <div class="detail">
+              <div class="detail-label">VENUE</div>
+              <div class="detail-value">
+                Metro Palace Function Hall,<br>
+                Near Rafiq Chowk, Ring Road 'klb'.
+              </div>
+              <a class="map-btn" target="_blank" rel="noopener"
+                 href="https://www.google.com/maps/search/?api=1&query=Metro%20Palace%20Function%20Hall%2C%20Near%20Rafiq%20Chowk%2C%20Ring%20Road%2C%20Kalaburagi">
+                <span>⌖</span> Open in Google Maps
+              </a>
+            </div>
+          </section>
+
+          <div class="divider small"><span>❧</span></div>
+
+          <p class="compliments">With Best Compliments From:</p>
+          <p class="relatives">Relatives and Friends.</p>
+
+          <div class="bottom-ornament">❧ ✦ ❧</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="countdown-section">
+      <p class="section-kicker">COUNTING THE MOMENTS</p>
+      <h2>Until the Celebration</h2>
+      <div class="countdown" id="countdown">
+        <div><strong id="days">00</strong><span>Days</span></div>
+        <div><strong id="hours">00</strong><span>Hours</span></div>
+        <div><strong id="minutes">00</strong><span>Minutes</span></div>
+        <div><strong id="seconds">00</strong><span>Seconds</span></div>
+      </div>
+    </section>
+
+    <footer>
+      <p>With love, prayers &amp; warm wishes</p>
+      <span>✦</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
